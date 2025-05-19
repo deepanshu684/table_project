@@ -10,94 +10,80 @@
         background-color: rgb(229, 234, 239);
         padding: 0px;
         margin: 0px;
+        box-sizing: border-box;
     }
-    .section-a{
-        display: flex;
-        ;
-    }
-    .labels{
-        font-size: 10px;
-        width: 70%;
-        margin-bottom: 0px;
-    }
-    h3{
-        display: inline-block;
-        margin-right: 200px;
-    }
-    form{
-        font-size: 10px;
-        display: flex;
-        justify-content: space-between;
-        width: 70%;
-        margin-top: 0px;
-
-    }
-    input{
-        width: 250px;
-        
+    .container{
+        height: 100%;
+        width: 100%;
     }
     button{
-        margin: 0px 25px;
+        margin-right: 60px;
+        border: none;
+        border-radius: 5px;
         padding: 5px 10px;
         font-size: 10px;
-        border: none;
+        margin-top: 20px;
     }
     .search_button{
-        background-color: rgb(49, 159, 122);
-        border-radius: 10px;
+        background-color: rgb(81, 210, 199);
     }
     .clear_button{
-        background-color: bisque;
-        
-        border-radius: 10px;
+        background-color: rgb(212, 198, 172);
     }
     .print_button{
-        background-color: rgb(98, 98, 255);
-      
-        border-radius: 10px;
+        background-color: blue;
         color: white;
     }
+    select{
+        width: 230px;
+        margin-right: 5px;
+        padding: 2px;
+        border-radius: 2px;
+    }
 
-    .section-b{
-        width: 100%;
-        text-transform: uppercase;
-        text-align: center;
-        font-size: 10px;
-        margin-top: 5px;
-        border: 2px solid black;
-    }
-    .section-3{
-        width: 100%;
-        text-transform: uppercase;
-        text-align: center;
-        font-size: 10px;
-    }
     table{
         width: 100%;
         margin-top: 10px;
         border-collapse: collapse;
         text-align: center;
     }
+    label{
+        font-size: 10px;
+    }
 </style>
+
 <body>
     <div class="container">
-        <div class="labels">
-            <h3>Rcv Number</h3>
-            <h3>Style Number</h3>
-            <h3>Fabrik</h3>
-        </div>
-        <div class="section-a">
-            <form action="">
-                <input type="text" name="" id="" placeholder="select an option">
-                <input type="text" name="" id="" placeholder="select an option">
-                <input type="text" name="" id="" placeholder="select an option">
-            </form>
-            <div>
+        <div style="display: flex;">
+            <div class="search_box " style="display: flex;">
+                <DIV>
+                    <label for="">Scn Number</label><br>
+                    <select name="" id="">
+                        <option value="">select one option</option>
+                    </select>
+                </DIV>
+                <div>
+                    <label for="">Styke NUMBER</label><br>
+                    <select name="" id="">
+                        <option value="">select one option</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="">fabrik</label><br>
+                    <select name="" id="">
+                        <option value="">select one option</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="buttons">
                 <button class="search_button">SEARCH</button>
                 <button class="clear_button">CLEAR</button>
                 <button class="print_button">PRINT</button>
-            </div>    
+            </div>
         </div>
+
+        
 
         <table border="1">
             <tr>
